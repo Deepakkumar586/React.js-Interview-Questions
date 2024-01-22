@@ -7282,7 +7282,7 @@ const loadUser = async () => {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-336. ### Why does strict mode render twice in React?
+338. ### Why does strict mode render twice in React?
       StrictMode renders components twice in development mode(not production) in order to detect any problems with your code and warn you about those problems. This is used to detect accidental side effects in the render phase.  If you used `create-react-app` development tool then it automatically enables StrictMode by default.
 
       ```js
@@ -7309,7 +7309,26 @@ const loadUser = async () => {
       3. Function component bodies
       4. State updater functions
       5. Functions passed to useState, useMemo, or useReducer (any Hook)
+         
+338. ### Why can't browsers read JSX?
+     Browsers cannot directly read JSX because JSX (JavaScript XML) is a syntax extension for JavaScript. It is not a standard JavaScript feature that browsers inherently understand. JSX is commonly used with 
+     React, a JavaScript library for building user interfaces, to describe the structure of UI components.
 
+     When you write JSX code, it needs to be transformed into regular JavaScript before it can be executed by browsers. This transformation process is typically done using a tool like Babel. Babel takes JSX and 
+     converts it into equivalent JavaScript code that browsers can understand. The resulting JavaScript is what gets sent to the browser for execution.
+
+     Here's a simple example to illustrate the transformation from JSX to JavaScript:
+     
+      ```js
+       const element = <h1>Hello, World!</h1>;
+      );
+      ```
+      Transformed JavaScript code:
+     ```js
+        const element = React.createElement('h1', null, 'Hello, World!');
+      );
+     ```
+     In this example, React.createElement is a function provided by the React library that creates a virtual DOM element. The transformed JavaScript code using React.createElement is what browsers can execute.
 **[⬆ Back to Top](#table-of-contents)**
 
 ## Disclaimer
