@@ -413,7 +413,9 @@
 
 3.  ### What is JSX?
 
-    _JSX_ stands for _JavaScript XML_ and it is an XML-like syntax extension to ECMAScript. Basically it just provides the syntactic sugar for the `React.createElement(type, props, ...children)` function, giving us expressiveness of JavaScript along with HTML like template syntax.
+    JSX stands for JavaScript XML. It is a React extension which allows writing JavaScript code that looks similar to HTML. It makes HTML file easy to understand.The JSX file makes the React application robust 
+    and boosts its performance. Basically it just provides the syntactic sugar for the `React.createElement(type, props, ...children)` function, giving us expressiveness of JavaScript along with HTML like 
+   template syntax.
 
     In the example below, the text inside `<h1>` tag is returned as JavaScript function to the render function.
 
